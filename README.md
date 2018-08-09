@@ -40,9 +40,10 @@ gs://mortgage-data-warehouse/dataproc-initialization-actions/zeppelin/zeppelin.s
 
 n1-highmem-2  n1-standard-2
 
-
-## ADD DEPENDENCIES artifact to spark ( com.databricks:spark-csv_2.11:1.5.0 )
-                                     com.spotify:spark-bigquery_2.11:0.2.1
+-----------------------------------------------------------------------------------------------------------------------------------
+ ADD DEPENDENCIES artifact to spark ( com.databricks:spark-csv_2.11:1.5.0 )
+                                      com.spotify:spark-bigquery_2.11:0.2.1
+-----------------------------------------------------------------------------------------------------------------------------------
 
 %sh echo 'export SPARK_SUBMIT_OPTIONS="--packages com.spotify:spark-bigquery_2.11:0.2.0"' >> /usr/lib/zeppelin/conf/zeppelin-env.sh
 
